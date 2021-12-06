@@ -18,7 +18,7 @@ function Dashboard({data}) {
         <main>
           <div className="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
             {/* Main Content */}
-            <div className="grid grid-cols-12 gap-6">{data}</div>
+            <div className="flex justify-center">{data}</div>
           </div>
         </main>
       </div>

@@ -23,15 +23,12 @@ export default function Alerts() {
     <div className="flex"> 
         {pacientes.map((paciente) => {
           return (
-            <div key={paciente.id} className="p-3 bg-white justify-around">
-              <div className="text-center space-y-2 sm:text-left space-x-2">
-                <div className="space-y-0.5">
-                  <p className="text-lg text-black font-semibold">
-                    {paciente.nombre}
-                  </p>
-                  <p className="text-gray-500 font-medium">{paciente.edad}</p>
-                </div>
-              </div>
+            <div key={paciente.id} className="p-3 bg-white jrounded-lg border">
+              <h1 className="font-bold text-lg">{paciente.nombre}</h1>
+              <div>{paciente.apellido}</div>
+              <div className="italic">{paciente.edad}</div>
+              <div>Cuarto: {paciente.cuarto}</div>
+              <div>{paciente.activo==='true' ? 'Activo': 'Inactivo'}</div>
             </div>
           );
         })}
